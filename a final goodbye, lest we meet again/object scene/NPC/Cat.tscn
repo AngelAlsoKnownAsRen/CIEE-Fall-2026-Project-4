@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://cl27apnkxege4"]
+
+[ext_resource type="Texture2D" uid="uid://bannamkrb0qk7" path="res://assets/CatPackFree/Idle.png" id="1_ec4k8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydaxt"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eog8e"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5dqv"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjbra"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npwky"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82iqs"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nfyj5"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7aaw"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3gc0n"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3tba"]
+atlas = ExtResource("1_ec4k8")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yfdgn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ydaxt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eog8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5dqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjbra")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npwky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82iqs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nfyj5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7aaw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3gc0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c3tba")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="cat" type="Node2D" unique_id=69897887]
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=1947587368]
+
+[node name="AnimatedSprite" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=978182321]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_yfdgn")
+animation = &"idle"
+autoplay = "idle"

@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://cfu5qdrhtiivf"]
+
+[ext_resource type="PackedScene" uid="uid://b6jhki4q075dj" path="res://object scene/Player.tscn" id="1_0w7vl"]
+[ext_resource type="PackedScene" uid="uid://ch1vjghbqmyc8" path="res://object scene/environment.tscn" id="2_ylow8"]
+[ext_resource type="PackedScene" uid="uid://b51n3iewhteu3" path="res://object scene/actionable.tscn" id="3_gw4tb"]
+[ext_resource type="Resource" uid="uid://drl5nppfuitcm" path="res://dialogue/textbox.dialogue" id="4_cc14c"]
+[ext_resource type="PackedScene" uid="uid://cl27apnkxege4" path="res://object scene/NPC/Cat.tscn" id="5_cc14c"]
+[ext_resource type="PackedScene" uid="uid://drmsfebiedpnr" path="res://environment_level_2.tscn" id="6_o65ou"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nda5"]
+size = Vector2(224, 36.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbcmv"]
+size = Vector2(25.5, 56)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3nda5"]
+radius = 21.023796
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sl6qq"]
+radius = 25.0
+height = 56.0
+
+[node name="Node2D" type="Node2D" unique_id=104691408]
+
+[node name="Player" parent="." unique_id=69897887 instance=ExtResource("1_0w7vl")]
+z_index = 5
+position = Vector2(530, 793)
+
+[node name="Camera2D" type="Camera2D" parent="Player/CharacterBody2D2" parent_id_path=PackedInt32Array(69897887, 502690186) index="3" unique_id=1892959554]
+zoom = Vector2(2, 2)
+
+[node name="Player_CharacterBody2D#Camera2D" type="Camera2D" parent="." unique_id=1218760644]
+zoom = Vector2(2, 2)
+
+[node name="Environment" parent="." unique_id=468629780 instance=ExtResource("2_ylow8")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=152345200]
+position = Vector2(-468, -247)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=881392704]
+z_index = 5
+position = Vector2(996, 1154.875)
+shape = SubResource("RectangleShape2D_3nda5")
+
+[node name="Actionables" type="Node" parent="." unique_id=1491793748]
+
+[node name="Sign" type="Node2D" parent="Actionables" unique_id=609161436]
+
+[node name="Actionable" parent="Actionables/Sign" unique_id=2047432898 instance=ExtResource("3_gw4tb")]
+z_index = 5
+position = Vector2(207, 142)
+dialogue_resource = ExtResource("4_cc14c")
+dialogue_start = "Sign"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionables/Sign/Actionable" unique_id=1961085145]
+position = Vector2(0.25, 15)
+shape = SubResource("RectangleShape2D_tbcmv")
+
+[node name="Cat" parent="Actionables" unique_id=1387419260 instance=ExtResource("5_cc14c")]
+z_index = 4
+position = Vector2(573, -128)
+
+[node name="Actionable" parent="Actionables/Cat" unique_id=1814529898 instance=ExtResource("3_gw4tb")]
+dialogue_resource = ExtResource("4_cc14c")
+dialogue_start = "Kitty"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionables/Cat/Actionable" unique_id=306522213]
+position = Vector2(-10, 26)
+shape = SubResource("CircleShape2D_3nda5")
+
+[node name="Teleport" type="Node2D" parent="Actionables" unique_id=1233902022]
+
+[node name="Actionable" parent="Actionables/Teleport" unique_id=1506852459 instance=ExtResource("3_gw4tb")]
+dialogue_resource = ExtResource("4_cc14c")
+dialogue_start = "teleport"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Actionables/Teleport/Actionable" unique_id=1419089989]
+light_mask = 0
+visibility_layer = 16
+z_index = 5
+position = Vector2(1009, 529)
+shape = SubResource("CapsuleShape2D_sl6qq")
+
+[node name="environment_level2" parent="Actionables/Teleport" unique_id=1150474229 instance=ExtResource("6_o65ou")]
+position = Vector2(2601, 395)
+
+[editable path="Player"]
+[editable path="Environment"]
