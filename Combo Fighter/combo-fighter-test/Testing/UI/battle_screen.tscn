@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://bf1r5853to1qf"]
+
+[ext_resource type="Script" uid="uid://le7engkirqgn" path="res://Testing/UI/battle_screen.gd" id="1_p3vqo"]
+[ext_resource type="Resource" uid="uid://d21mojyca2pkd" path="res://Testing/Scripts/Testicus the Tester.tres" id="2_e0r46"]
+[ext_resource type="Resource" uid="uid://b76x2tkhrfmbh" path="res://Testing/Scripts/Roboto the Predicatable.tres" id="3_e0r46"]
+[ext_resource type="PackedScene" uid="uid://ykvhod1cmduv" path="res://Testing/UI/action_screen.tscn" id="4_e0r46"]
+[ext_resource type="Texture2D" uid="uid://s2n3pye51bsm" path="res://Testing/Assets/Slash.png" id="5_tky0i"]
+[ext_resource type="Texture2D" uid="uid://bwi12mqkc7gfb" path="res://Testing/Assets/Thrust Symbol.png" id="6_bbech"]
+[ext_resource type="Texture2D" uid="uid://d0du6p0chu4bf" path="res://Testing/Assets/Parry Symbol.png" id="7_k5h5m"]
+[ext_resource type="Texture2D" uid="uid://bep74dqav7080" path="res://Testing/Assets/Hook Symbol.png" id="8_gwqlw"]
+[ext_resource type="Texture2D" uid="uid://cv3f7j32a7r8j" path="res://Testing/Assets/Swipe Symbol.png" id="9_pc1y2"]
+[ext_resource type="Texture2D" uid="uid://d04ogtcufurap" path="res://Testing/Assets/FInisher Symbol.png" id="10_eui0g"]
+
+[node name="Battle Screen" type="Control" unique_id=1638816617]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_p3vqo")
+player = ExtResource("2_e0r46")
+enemy = ExtResource("3_e0r46")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=20236637]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 651.0
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1218924369]
+layout_mode = 0
+offset_right = 598.0
+offset_bottom = 527.0
+use_top_left = true
+
+[node name="Action Screen" parent="CenterContainer" unique_id=408393293 instance=ExtResource("4_e0r46")]
+layout_mode = 2
+
+[node name="Player Health" type="Label" parent="." unique_id=272878253]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 329.0
+offset_right = 418.0
+offset_bottom = 399.0
+theme_override_colors/font_color = Color(0.8, 0.047058824, 0.1764706, 1)
+theme_override_font_sizes/font_size = 50
+text = "Player Health: 0"
+
+[node name="Player Momentum" type="Label" parent="." unique_id=1882055690]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 400.0
+offset_right = 408.0
+offset_bottom = 449.0
+theme_override_colors/font_color = Color(0.99097997, 0.82475865, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Player Momentum: 0"
+
+[node name="Enemy Health" type="TextEdit" parent="." unique_id=1422286775]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 33.0
+offset_right = 1080.0
+offset_bottom = 287.0
+theme_override_colors/search_result_color = Color(0.3019608, 0.3019608, 0.3019608, 0)
+theme_override_colors/search_result_border_color = Color(0.3019608, 0.3019608, 0.3019608, 0)
+theme_override_colors/caret_color = Color(0.8745098, 0.8745098, 0.8745098, 0)
+theme_override_colors/caret_background_color = Color(0, 0, 0, 0)
+theme_override_colors/selection_color = Color(0.5019608, 0.5019608, 0.5019608, 0)
+theme_override_colors/font_color = Color(0.8, 0.047058824, 0.1764706, 1)
+theme_override_colors/font_placeholder_color = Color(0.8745098, 0.8745098, 0.8745098, 0)
+theme_override_colors/current_line_color = Color(0.2509804, 0.2509804, 0.25882354, 0)
+theme_override_font_sizes/font_size = 50
+text = "Enemy Health: 0"
+wrap_mode = 1
+
+[node name="Usable Skill Types" type="GridContainer" parent="." unique_id=1504361845]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 313.0
+columns = 3
+
+[node name="Slash Sprite" type="TextureRect" parent="Usable Skill Types" unique_id=786880803]
+visible = false
+layout_mode = 2
+texture = ExtResource("5_tky0i")
+
+[node name="Thrust Sprite" type="TextureRect" parent="Usable Skill Types" unique_id=694243290]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_bbech")
+
+[node name="Parry Sprite" type="TextureRect" parent="Usable Skill Types" unique_id=1451142796]
+visible = false
+layout_mode = 2
+texture = ExtResource("7_k5h5m")
+
+[node name="Hook Sprite" type="TextureRect" parent="Usable Skill Types" unique_id=1660401729]
+visible = false
+layout_mode = 2
+texture = ExtResource("8_gwqlw")
+
+[node name="Swipe Sprite" type="TextureRect" parent="Usable Skill Types" unique_id=13752153]
+visible = false
+layout_mode = 2
+texture = ExtResource("9_pc1y2")
+
+[node name="Finisher Sprite" type="TextureRect" parent="Usable Skill Types" unique_id=676465924]
+visible = false
+layout_mode = 2
+texture = ExtResource("10_eui0g")

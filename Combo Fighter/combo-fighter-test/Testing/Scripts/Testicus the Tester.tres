@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="player_character" format=3 uid="uid://d21mojyca2pkd"]
+
+[ext_resource type="Resource" uid="uid://cohkcxt3jquy8" path="res://Scripts/Inventory Folder/Weapons/Basic Broadsword.tres" id="1_iega5"]
+[ext_resource type="Script" uid="uid://dxs6cud8preyl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/player_character.gd" id="2_lrw6b"]
+[ext_resource type="Script" uid="uid://c7uytroo4s2fx" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/InvItem.gd" id="3_577v0"]
+[ext_resource type="Resource" uid="uid://roc6bu8k36in" path="res://Scripts/Inventory Folder/Skills/Straight Slash.tres" id="4_j7ltb"]
+[ext_resource type="Resource" uid="uid://df1bdm18b3k5a" path="res://Scripts/Inventory Folder/Skills/Straight Thrust.tres" id="5_j7ltb"]
+[ext_resource type="Resource" uid="uid://di1uuvi8axbno" path="res://Scripts/Inventory Folder/Skills/Basic Parry.tres" id="6_lrw6b"]
+[ext_resource type="Script" uid="uid://cph4ssk6cqlae" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/Inventory.gd" id="6_sjnff"]
+[ext_resource type="Resource" uid="uid://bosm5ggxxit5t" path="res://Scripts/Inventory Folder/Skills/Hook Over.tres" id="7_ssx68"]
+[ext_resource type="Resource" uid="uid://dq7j6fc4nrqy1" path="res://Scripts/Inventory Folder/Skills/Tricky Swipe.tres" id="8_sjnff"]
+
+[sub_resource type="Resource" id="Resource_e0r46"]
+script = ExtResource("6_sjnff")
+InvItems = Array[ExtResource("3_577v0")]([ExtResource("4_j7ltb"), ExtResource("5_j7ltb"), ExtResource("6_lrw6b"), ExtResource("7_ssx68"), ExtResource("8_sjnff")])
+metadata/_custom_type_script = "uid://cph4ssk6cqlae"
+
+[resource]
+script = ExtResource("2_lrw6b")
+skill_inventory = SubResource("Resource_e0r46")
+hand_one = ExtResource("1_iega5")
+name = "Testicus, the tester"
+max_health = 100
+metadata/_custom_type_script = "uid://dxs6cud8preyl"

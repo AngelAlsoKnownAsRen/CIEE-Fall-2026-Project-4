@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://df1bdm18b3k5a"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_k34pl"]
+
+[resource]
+script = ExtResource("1_k34pl")
+type = 2
+combo_types = Array[int]([1])
+base_damage = 20
+momentum_min = 10
+momentum_max = 40
+name = "Straight Thrust"
+description = "A powerful thrust"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"
