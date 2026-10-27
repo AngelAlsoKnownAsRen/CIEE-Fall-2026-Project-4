@@ -122,9 +122,12 @@ size = Vector2(16, 17)
 radius = 16.0
 
 [node name="Player" type="Node2D" unique_id=69897887]
+z_index = 5
+scale = Vector2(0.5, 0.5)
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=502690186]
 script = ExtResource("1_i05m3")
+SPEED = 100
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="CharacterBody2D2" unique_id=76187316]
 scale = Vector2(2, 2)

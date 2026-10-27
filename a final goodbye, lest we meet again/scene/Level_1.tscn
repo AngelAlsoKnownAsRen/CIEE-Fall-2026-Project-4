@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cfu5qdrhtiivf"]
 
-[ext_resource type="PackedScene" uid="uid://ch1vjghbqmyc8" path="res://object scene/environment.tscn" id="1_msvo2"]
+[ext_resource type="PackedScene" uid="uid://ch1vjghbqmyc8" path="res://object scene/tileset/environment.tscn" id="1_msvo2"]
 [ext_resource type="PackedScene" uid="uid://b51n3iewhteu3" path="res://object scene/actionable.tscn" id="2_fjkoe"]
 [ext_resource type="Resource" uid="uid://drl5nppfuitcm" path="res://dialogue/textbox.dialogue" id="3_8w25p"]
 [ext_resource type="PackedScene" uid="uid://cl27apnkxege4" path="res://object scene/NPC/Cat.tscn" id="4_mov0i"]

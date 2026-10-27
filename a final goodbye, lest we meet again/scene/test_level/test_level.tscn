@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://r4dfqcamycjv"]
+
+[ext_resource type="PackedScene" uid="uid://b88mowfhg6a0l" path="res://object scene/tileset/tileset_test_level.tscn" id="1_8aylg"]
+[ext_resource type="PackedScene" uid="uid://b6jhki4q075dj" path="res://object scene/Player.tscn" id="1_saiaw"]
+
+[node name="Node2D" type="Node2D" unique_id=654200574]
+
+[node name="Environment" type="Node" parent="." unique_id=718731481]
+
+[node name="tileset_test_level" parent="Environment" unique_id=545547285 instance=ExtResource("1_8aylg")]
+
+[node name="Player" parent="." unique_id=69897887 instance=ExtResource("1_saiaw")]
+position = Vector2(135, 100)
+
+[node name="Camera2D" type="Camera2D" parent="Player/CharacterBody2D2" parent_id_path=PackedInt32Array(69897887, 502690186) index="3" unique_id=1951470314]
+scale = Vector2(2, 2)
+zoom = Vector2(3.5, 3.5)
+
+[editable path="Player"]
