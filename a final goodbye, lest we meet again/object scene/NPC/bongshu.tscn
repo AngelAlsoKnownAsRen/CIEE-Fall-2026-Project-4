@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b377vdaco3t0m"]
+
+[ext_resource type="Texture2D" uid="uid://bd7upjgmo047d" path="res://assets/temporary/combatant/bongshu.png" id="1_2j3il"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nda5"]
+size = Vector2(133.33339, 283.33347)
+
+[node name="bongshu" type="Node2D" unique_id=69897887]
+z_index = 4
+scale = Vector2(0.06, 0.06)
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=1947587368]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" unique_id=1754863981]
+texture = ExtResource("1_2j3il")
+region_enabled = true
+region_rect = Rect2(448, 712, 208, 312)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=499789577]
+z_index = 5
+position = Vector2(16.666664, -8.333316)
+scale = Vector2(0.99999946, 0.99999946)
+shape = SubResource("RectangleShape2D_3nda5")
+debug_color = Color(0.8277549, 0.38705227, 0.23187125, 0.41960785)

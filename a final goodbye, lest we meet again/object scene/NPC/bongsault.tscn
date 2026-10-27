@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dld0lcsg7mxgn"]
+
+[ext_resource type="Texture2D" uid="uid://dd8eg8y8tw1r3" path="res://assets/temporary/combatant/bongsualt.png" id="1_g7i2b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nda5"]
+size = Vector2(140, 249.99998)
+
+[node name="bongsault" type="Node2D" unique_id=69897887]
+z_index = 4
+scale = Vector2(0.06, 0.06)
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=1947587368]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" unique_id=1754863981]
+texture = ExtResource("1_g7i2b")
+region_enabled = true
+region_rect = Rect2(0, 736, 136, 328)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=499789577]
+z_index = 5
+position = Vector2(1.10268575e-05, -44.999958)
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_3nda5")
+debug_color = Color(0.8277549, 0.38705227, 0.23187125, 0.41960785)

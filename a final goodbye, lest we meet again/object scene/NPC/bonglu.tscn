@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://hxk314v3y2lc"]
+
+[ext_resource type="Texture2D" uid="uid://baukfgr20m212" path="res://assets/temporary/combatant/bonglu.png" id="1_dfoo3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nda5"]
+size = Vector2(133.33342, 265.00012)
+
+[node name="bonglu" type="Node2D" unique_id=69897887]
+z_index = 4
+scale = Vector2(0.17, 0.17)
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=1947587368]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" unique_id=1754863981]
+texture = ExtResource("1_dfoo3")
+region_enabled = true
+region_rect = Rect2(912, 688, 144, 336)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=499789577]
+z_index = 5
+position = Vector2(0, -15.833321)
+scale = Vector2(0.99999934, 0.99999934)
+shape = SubResource("RectangleShape2D_3nda5")
+debug_color = Color(0.8277549, 0.38705227, 0.23187125, 0.41960785)

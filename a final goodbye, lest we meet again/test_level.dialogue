@@ -1,0 +1,11 @@
+~ bongshu
+bongshu: You, I need mcdonalds for my daughter.
+bongshu: Unfortunately the way to the B.D (Burger Dealer) is past this fake building created by a silent rascal. Go teach him a lesson. Understood?
+- Ok! => END
+- Say that again... => bongshu
+
+~ bongsault
+bongsault: ...
+The silence on this child is impeccable, do you wish to fight him?
+- Let's do this! => END
+- Give me a moment... => END

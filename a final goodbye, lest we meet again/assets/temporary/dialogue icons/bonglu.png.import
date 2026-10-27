@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cra2o3ialij78"
-path="res://.godot/imported/fantasy-flight-games.svg-6abc567e02ea6df3e62232965452223b.ctex"
+uid="uid://bpsywv43vu2ip"
+path="res://.godot/imported/bonglu.png-60ad775bc2c19858b40e2a8163f3dcef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fantasy-flight-games.svg"
-dest_files=["res://.godot/imported/fantasy-flight-games.svg-6abc567e02ea6df3e62232965452223b.ctex"]
+source_file="res://assets/temporary/dialogue icons/bonglu.png"
+dest_files=["res://.godot/imported/bonglu.png-60ad775bc2c19858b40e2a8163f3dcef.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
