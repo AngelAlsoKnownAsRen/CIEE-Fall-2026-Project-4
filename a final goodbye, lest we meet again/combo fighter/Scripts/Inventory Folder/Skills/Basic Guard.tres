@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://befvpw7kwfd7w"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_h7xev"]
+
+[resource]
+script = ExtResource("1_h7xev")
+base_defense = 5
+momentum_max = 100
+name = "Basic Guard"
+description = "[Test] A basic defensive skill"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

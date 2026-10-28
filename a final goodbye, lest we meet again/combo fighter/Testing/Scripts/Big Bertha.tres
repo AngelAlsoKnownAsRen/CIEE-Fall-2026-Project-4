@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="character" format=3 uid="uid://cvcjwc5m7sscq"]
+
+[ext_resource type="Script" uid="uid://dwrhwaq54i1jm" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/character.gd" id="1_g8r6c"]
+
+[resource]
+script = ExtResource("1_g8r6c")
+name = "Big Bertha"
+max_health = 50
+cur_health = 50
+metadata/_custom_type_script = "uid://dwrhwaq54i1jm"

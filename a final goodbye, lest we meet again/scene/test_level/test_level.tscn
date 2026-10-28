@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b88mowfhg6a0l" path="res://object scene/tileset/tileset_test_level.tscn" id="1_8aylg"]
 [ext_resource type="PackedScene" uid="uid://b6jhki4q075dj" path="res://object scene/Player.tscn" id="1_saiaw"]
 [ext_resource type="PackedScene" uid="uid://hxk314v3y2lc" path="res://object scene/NPC/bonglu.tscn" id="3_8r3jg"]
+[ext_resource type="AudioStream" uid="uid://dt7n1dqsfaxik" path="res://assets/sound/freesound_community-footsteps-in-a-hallway-47842.wav" id="3_mti6n"]
 [ext_resource type="PackedScene" uid="uid://dld0lcsg7mxgn" path="res://object scene/NPC/bongsault.tscn" id="3_r8dxa"]
 [ext_resource type="PackedScene" uid="uid://b377vdaco3t0m" path="res://object scene/NPC/bongshu.tscn" id="5_sj7wh"]
 [ext_resource type="PackedScene" uid="uid://b51n3iewhteu3" path="res://object scene/actionable.tscn" id="6_n6eni"]
@@ -28,7 +29,10 @@ position = Vector2(135, 100)
 
 [node name="Camera2D" type="Camera2D" parent="Player/CharacterBody2D2" parent_id_path=PackedInt32Array(69897887, 502690186) index="3" unique_id=1951470314]
 scale = Vector2(2, 2)
-zoom = Vector2(5, 5)
+zoom = Vector2(10, 10)
+
+[node name="AudioStreamPlayer2D" parent="Player/CharacterBody2D2" parent_id_path=PackedInt32Array(69897887, 502690186) index="4" unique_id=2067296761]
+stream = ExtResource("3_mti6n")
 
 [node name="NPCS" type="Node" parent="." unique_id=1812068654]
 
