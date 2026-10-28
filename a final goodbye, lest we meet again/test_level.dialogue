@@ -1,11 +1,22 @@
 ~ bongshu
-bongshu: You, I need mcdonalds for my daughter.
-bongshu: Unfortunately the way to the B.D (Burger Dealer) is past this fake building created by a silent rascal. Go teach him a lesson. Understood?
-- Ok! => END
-- Say that again... => bongshu
+if State.bongsaultdead == "dead"
+	bongshu: that mcdonalds kiddo. => END
+else:
+	bongshu: You, I need mcdonalds for my daughter.
+	bongshu: Unfortunately the way to the B.D (Burger Dealer) is past this fake building created by a silent rascal. Go teach him a lesson. Understood?
+	- Ok! => END
+	- Say that again... => bongshu
 
 ~ bongsault
 bongsault: ...
 The silence on this child is impeccable, do you wish to fight him?
-- Let's do this! => END
+- Let's do this!
+	set State.hidden = "reveal"
+	set State.bongsaultdead = "dead"
+	do Hidden_Manager.amogus()
+	=> END
 - Give me a moment... => END
+
+~ bonglu
+bonglu: puhuhuhuh...
+=> END

@@ -11,6 +11,9 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_tbcmv"]
 radius = 250.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_sl6qq"]
+radius = 235.89343
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_3nda5"]
 radius = 150.0
 
@@ -43,6 +46,13 @@ shape = SubResource("CircleShape2D_tbcmv")
 [node name="bonglu" parent="NPCS" unique_id=1905098917 instance=ExtResource("3_8r3jg")]
 position = Vector2(280, -59)
 scale = Vector2(0.0595, 0.0595)
+
+[node name="Actionable" parent="NPCS/bonglu" unique_id=1737922717 instance=ExtResource("6_n6eni")]
+dialogue_resource = ExtResource("7_mj66c")
+dialogue_start = "bonglu"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCS/bonglu/Actionable" unique_id=791551524]
+shape = SubResource("CircleShape2D_sl6qq")
 
 [node name="bongshu" parent="NPCS" unique_id=475262652 instance=ExtResource("5_sj7wh")]
 position = Vector2(104.000046, 33.000015)

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cl68clbxdmc8m" path="res://UI/text balloon/balloon.gd" id="1_rvhf8"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn" id="2_d65sc"]
+[ext_resource type="FontFile" uid="uid://buvtw7c7m5mam" path="res://UI/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf" id="3_d65sc"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd" id="3_q5g8q"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
@@ -9,7 +10,7 @@ content_margin_left = 20.0
 content_margin_top = 10.0
 content_margin_right = 20.0
 content_margin_bottom = 10.0
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.1486403, 0.13552108, 0.54792017, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -25,7 +26,7 @@ content_margin_left = 20.0
 content_margin_top = 10.0
 content_margin_right = 20.0
 content_margin_bottom = 10.0
-bg_color = Color(0.121569, 0.121569, 0.121569, 1)
+bg_color = Color(0.5411582, 0.5673792, 0.9969364, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -41,7 +42,7 @@ content_margin_left = 20.0
 content_margin_top = 10.0
 content_margin_right = 20.0
 content_margin_bottom = 10.0
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.3647059, 0.4117647, 0.9490196, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -53,7 +54,7 @@ corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkmqt"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.3647059, 0.4117647, 0.9490196, 1)
 border_width_left = 3
 border_width_top = 3
 border_width_right = 3
@@ -74,6 +75,12 @@ MarginContainer/constants/margin_left = 30
 MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
+
+[sub_resource type="FontVariation" id="FontVariation_3m6un"]
+base_font = ExtResource("3_d65sc")
+
+[sub_resource type="Theme" id="Theme_djnx8"]
+default_font = SubResource("FontVariation_3m6un")
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001
@@ -170,6 +177,7 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme = SubResource("Theme_djnx8")
 text = "Dialogue..."
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=418507161]
