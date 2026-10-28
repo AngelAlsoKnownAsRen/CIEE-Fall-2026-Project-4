@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://gppfdfapfuf3"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_qj4wb"]
+
+[resource]
+script = ExtResource("1_qj4wb")
+type = 3
+combo_types = Array[int]([2, 5])
+base_defense = 15
+momentum_min = 25
+momentum_max = 50
+momentum_gain = 10
+name = "Improved Parry"
+description = "A technique improved by experience"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

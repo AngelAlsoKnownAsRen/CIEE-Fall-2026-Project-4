@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://crxjmav773hn"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_8n6jt"]
+
+[resource]
+script = ExtResource("1_8n6jt")
+type = 6
+base_damage = 25
+base_defense = -5
+def_effect_percent = 1.5
+momentum_min = 15
+momentum_max = 25
+name = "Revenge"
+description = "An attack with fury behind it"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

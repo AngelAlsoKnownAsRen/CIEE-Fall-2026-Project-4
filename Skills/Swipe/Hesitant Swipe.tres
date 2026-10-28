@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://dmh4uahwkjh5p"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_hyjg7"]
+
+[resource]
+script = ExtResource("1_hyjg7")
+type = 5
+combo_types = Array[int]([2, 4])
+base_damage = 10
+momentum_max = 15
+momentum_gain = 10
+name = "Hesitant Swipe"
+description = "A slow strike that allows for a greater range of movement"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

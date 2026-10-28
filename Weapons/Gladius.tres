@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="weapon" format=3 uid="uid://br51tya8n6knw"]
+
+[ext_resource type="Resource" uid="uid://dumeoqsa8fnrg" path="res://Scripts/Inventory Folder/Skills/Basic/Strike (Hook).tres" id="1_2uln6"]
+[ext_resource type="Script" uid="uid://boydvvioa7g37" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/weapon_InvItem.gd" id="2_2uln6"]
+[ext_resource type="Resource" uid="uid://bp2ohnfjcrece" path="res://Scripts/Inventory Folder/Skills/Basic/Strike (Swipe).tres" id="2_yw0k6"]
+
+[resource]
+script = ExtResource("2_2uln6")
+basic_skill = ExtResource("1_2uln6")
+guard_skill = ExtResource("2_yw0k6")
+name = "Gladius"
+description = "A shortsword with a broad blade that isn't good at guarding"
+metadata/_custom_type_script = "uid://boydvvioa7g37"

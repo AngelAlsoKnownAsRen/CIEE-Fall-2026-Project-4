@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://ckr7li4q27uf4"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_36p4j"]
+
+[resource]
+script = ExtResource("1_36p4j")
+type = 1
+combo_types = Array[int]([3])
+base_damage = 10
+momentum_max = 40
+momentum_gain = 15
+name = "Speedy Slash"
+description = "A fast moving attack"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"
