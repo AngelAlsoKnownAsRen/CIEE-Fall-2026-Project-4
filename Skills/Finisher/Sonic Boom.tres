@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://d0g5rhkqknw5p"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_d5nf4"]
+
+[resource]
+script = ExtResource("1_d5nf4")
+type = 6
+base_damage = 30
+def_effect_percent = 0.25
+momentum_min = 60
+momentum_max = 100
+name = "Sonic Boom"
+description = "An attack that moves faster than sound, leaving nothing in its wake!"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

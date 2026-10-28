@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="player_character" format=3 uid="uid://dihmn3k7aywla"]
+
+[ext_resource type="Script" uid="uid://c7uytroo4s2fx" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/InvItem.gd" id="1_hknkh"]
+[ext_resource type="Script" uid="uid://cph4ssk6cqlae" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/Inventory.gd" id="2_60ty3"]
+[ext_resource type="Resource" uid="uid://gbmkffrtv2je" path="res://Scripts/Inventory Folder/Weapons/Basic Greatsword.tres" id="2_bk510"]
+[ext_resource type="Script" uid="uid://dxs6cud8preyl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/player_character.gd" id="3_bk510"]
+[ext_resource type="Resource" uid="uid://di1uuvi8axbno" path="res://Scripts/Inventory Folder/Skills/Parry/Classic Parry.tres" id="5_vk3sx"]
+[ext_resource type="Resource" uid="uid://dtpdhegh7s1cm" path="res://Scripts/Inventory Folder/Skills/Parry/Slowing Parry.tres" id="6_uo0mh"]
+[ext_resource type="Resource" uid="uid://gppfdfapfuf3" path="res://Scripts/Inventory Folder/Skills/Parry/Improved Parry.tres" id="6_vk3sx"]
+[ext_resource type="Resource" uid="uid://dmh4uahwkjh5p" path="res://Scripts/Inventory Folder/Skills/Swipe/Hesitant Swipe.tres" id="7_juxkm"]
+[ext_resource type="Resource" uid="uid://dq7j6fc4nrqy1" path="res://Scripts/Inventory Folder/Skills/Swipe/Tricky Swipe.tres" id="8_y87tp"]
+[ext_resource type="Resource" uid="uid://bosm5ggxxit5t" path="res://Scripts/Inventory Folder/Skills/Hook/Hook Over.tres" id="9_dnwp7"]
+[ext_resource type="Resource" uid="uid://bj5lyi03553d8" path="res://Scripts/Inventory Folder/Skills/Hook/Slow Strike.tres" id="10_6y51q"]
+[ext_resource type="Resource" uid="uid://roc6bu8k36in" path="res://Scripts/Inventory Folder/Skills/Slash/Straight Slash.tres" id="11_slq0e"]
+[ext_resource type="Resource" uid="uid://df1bdm18b3k5a" path="res://Scripts/Inventory Folder/Skills/Thrust/Straight Thrust.tres" id="12_mwwvx"]
+[ext_resource type="Resource" uid="uid://dfs0lhay8f01f" path="res://Scripts/Inventory Folder/Skills/Thrust/Slow Thrust.tres" id="14_vulsj"]
+
+[sub_resource type="Resource" id="Resource_0l2dq"]
+script = ExtResource("1_hknkh")
+metadata/_custom_type_script = "uid://c7uytroo4s2fx"
+
+[sub_resource type="Resource" id="Resource_jwb6i"]
+script = ExtResource("1_hknkh")
+metadata/_custom_type_script = "uid://c7uytroo4s2fx"
+
+[sub_resource type="Resource" id="Resource_pd2hx"]
+script = ExtResource("2_60ty3")
+metadata/_custom_type_script = "uid://cph4ssk6cqlae"
+
+[sub_resource type="Resource" id="Resource_wa5ws"]
+script = ExtResource("2_60ty3")
+InvItems = Array[ExtResource("1_hknkh")]([ExtResource("5_vk3sx"), ExtResource("6_vk3sx"), ExtResource("6_uo0mh"), ExtResource("7_juxkm"), ExtResource("8_y87tp"), ExtResource("9_dnwp7"), ExtResource("10_6y51q"), ExtResource("11_slq0e"), ExtResource("12_mwwvx"), ExtResource("14_vulsj")])
+metadata/_custom_type_script = "uid://cph4ssk6cqlae"
+
+[resource]
+script = ExtResource("3_bk510")
+item_inventory = SubResource("Resource_pd2hx")
+skill_inventory = SubResource("Resource_wa5ws")
+hand_one = ExtResource("2_bk510")
+hand_two = SubResource("Resource_jwb6i")
+armor = SubResource("Resource_0l2dq")
+name = "The Sturdy"
+description = "A slow moving defensive class"
+max_health = 100
+metadata/_custom_type_script = "uid://dxs6cud8preyl"
