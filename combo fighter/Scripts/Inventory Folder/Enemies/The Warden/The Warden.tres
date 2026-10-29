@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="loop_enemy_character" format=3 uid="uid://c1m3pqg4cngn4"]
+
+[ext_resource type="Script" uid="uid://7jlpidj76vwl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/attack.gd" id="1_nwvrw"]
+[ext_resource type="Resource" uid="uid://dgg4u0jln58ov" path="res://Scripts/Inventory Folder/Enemies/The Warden/Recharge.tres" id="2_4vw0n"]
+[ext_resource type="Resource" uid="uid://bevfds6u3casw" path="res://Scripts/Inventory Folder/Enemies/The Warden/Defenses Up.tres" id="3_qdu8g"]
+[ext_resource type="Resource" uid="uid://cg7i1gvvbmpdq" path="res://Scripts/Inventory Folder/Enemies/The Warden/Shell Attack.tres" id="4_fruvs"]
+[ext_resource type="Resource" uid="uid://bdi8yfv03rg1t" path="res://Scripts/Inventory Folder/Enemies/The Warden/All Out Barrage.tres" id="5_c1s1j"]
+[ext_resource type="Script" uid="uid://17ytthp2mw42" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/loop_enemy_character.gd" id="6_4vw0n"]
+
+[resource]
+script = ExtResource("6_4vw0n")
+AttackList = Array[ExtResource("1_nwvrw")]([ExtResource("3_qdu8g"), ExtResource("4_fruvs"), ExtResource("2_4vw0n"), ExtResource("5_c1s1j")])
+name = "The Warden"
+description = "An ancient and powerful guardian"
+max_health = 150
+metadata/_custom_type_script = "uid://17ytthp2mw42"

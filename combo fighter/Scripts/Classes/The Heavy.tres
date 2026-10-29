@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="player_character" format=3 uid="uid://vvvkhlpf2pi5"]
+
+[ext_resource type="Script" uid="uid://c7uytroo4s2fx" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/InvItem.gd" id="1_igjik"]
+[ext_resource type="Resource" uid="uid://br51tya8n6knw" path="res://Scripts/Inventory Folder/Weapons/Gladius.tres" id="2_ns0l8"]
+[ext_resource type="Script" uid="uid://cph4ssk6cqlae" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/Inventory.gd" id="3_au18v"]
+[ext_resource type="Script" uid="uid://dxs6cud8preyl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/player_character.gd" id="4_sudwp"]
+[ext_resource type="Resource" uid="uid://dwu4athb56cxd" path="res://Scripts/Inventory Folder/Skills/Slash/Stalling Slash.tres" id="5_oepdm"]
+[ext_resource type="Resource" uid="uid://roc6bu8k36in" path="res://Scripts/Inventory Folder/Skills/Slash/Straight Slash.tres" id="6_8bab6"]
+[ext_resource type="Resource" uid="uid://bpssr4kkek0k6" path="res://Scripts/Inventory Folder/Skills/Thrust/Hesitant Thrust.tres" id="7_1ki05"]
+[ext_resource type="Resource" uid="uid://di1uuvi8axbno" path="res://Scripts/Inventory Folder/Skills/Parry/Classic Parry.tres" id="8_nhxyf"]
+[ext_resource type="Resource" uid="uid://dtpdhegh7s1cm" path="res://Scripts/Inventory Folder/Skills/Parry/Slowing Parry.tres" id="9_si5s3"]
+[ext_resource type="Resource" uid="uid://bosm5ggxxit5t" path="res://Scripts/Inventory Folder/Skills/Hook/Hook Over.tres" id="10_jrgnp"]
+[ext_resource type="Resource" uid="uid://ds5b1y7jt5hq7" path="res://Scripts/Inventory Folder/Skills/Parry/Readying Parry.tres" id="10_oepdm"]
+[ext_resource type="Resource" uid="uid://bj5lyi03553d8" path="res://Scripts/Inventory Folder/Skills/Hook/Slow Strike.tres" id="12_fyofw"]
+[ext_resource type="Resource" uid="uid://dq7j6fc4nrqy1" path="res://Scripts/Inventory Folder/Skills/Swipe/Tricky Swipe.tres" id="13_n38r0"]
+[ext_resource type="Resource" uid="uid://crxjmav773hn" path="res://Scripts/Inventory Folder/Skills/Finisher/Revenge.tres" id="14_mnglw"]
+
+[sub_resource type="Resource" id="Resource_nnntp"]
+script = ExtResource("1_igjik")
+metadata/_custom_type_script = "uid://c7uytroo4s2fx"
+
+[sub_resource type="Resource" id="Resource_p0dyc"]
+script = ExtResource("1_igjik")
+metadata/_custom_type_script = "uid://c7uytroo4s2fx"
+
+[sub_resource type="Resource" id="Resource_ppqja"]
+script = ExtResource("3_au18v")
+metadata/_custom_type_script = "uid://cph4ssk6cqlae"
+
+[sub_resource type="Resource" id="Resource_gip5u"]
+script = ExtResource("3_au18v")
+InvItems = Array[ExtResource("1_igjik")]([ExtResource("5_oepdm"), ExtResource("6_8bab6"), ExtResource("7_1ki05"), ExtResource("8_nhxyf"), ExtResource("9_si5s3"), ExtResource("10_oepdm"), ExtResource("10_jrgnp"), ExtResource("12_fyofw"), ExtResource("13_n38r0"), ExtResource("14_mnglw")])
+metadata/_custom_type_script = "uid://cph4ssk6cqlae"
+
+[resource]
+script = ExtResource("4_sudwp")
+item_inventory = SubResource("Resource_ppqja")
+skill_inventory = SubResource("Resource_gip5u")
+hand_one = ExtResource("2_ns0l8")
+hand_two = SubResource("Resource_p0dyc")
+armor = SubResource("Resource_nnntp")
+name = "The Heavy"
+description = "A slow character that unleashes small and devastating combos"
+max_health = 100
+metadata/_custom_type_script = "uid://dxs6cud8preyl"

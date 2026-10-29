@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://ds5b1y7jt5hq7"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_flppn"]
+
+[resource]
+script = ExtResource("1_flppn")
+type = 3
+combo_types = Array[int]([6])
+base_defense = 10
+momentum_min = 10
+momentum_max = 20
+momentum_gain = 5
+name = "Readying Parry"
+description = "A parry that prepares for a quick strike"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

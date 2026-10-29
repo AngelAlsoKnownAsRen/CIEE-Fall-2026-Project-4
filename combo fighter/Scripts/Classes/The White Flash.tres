@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="player_character" format=3 uid="uid://daw8oghjbgu2w"]
+
+[ext_resource type="Script" uid="uid://c7uytroo4s2fx" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/InvItem.gd" id="1_wh3q6"]
+[ext_resource type="Resource" uid="uid://cohkcxt3jquy8" path="res://combo fighter/Scripts/Inventory Folder/Weapons/Basic Broadsword.tres" id="2_weytf"]
+[ext_resource type="Script" uid="uid://cph4ssk6cqlae" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/Inventory.gd" id="3_cdx8v"]
+[ext_resource type="Script" uid="uid://dxs6cud8preyl" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/player_character.gd" id="4_lixhk"]
+[ext_resource type="Resource" uid="uid://ckr7li4q27uf4" path="res://combo fighter/Scripts/Inventory Folder/Skills/Slash/Speedy Slash.tres" id="5_84f20"]
+[ext_resource type="Resource" uid="uid://bqmuspgqsvgk2" path="res://combo fighter/Scripts/Inventory Folder/Skills/Slash/High Speed Slash.tres" id="6_x145e"]
+[ext_resource type="Resource" uid="uid://dwu4athb56cxd" path="res://combo fighter/Scripts/Inventory Folder/Skills/Slash/Stalling Slash.tres" id="7_3umr0"]
+[ext_resource type="Resource" uid="uid://dfs0lhay8f01f" path="res://combo fighter/Scripts/Inventory Folder/Skills/Thrust/Slow Thrust.tres" id="8_gkn1b"]
+[ext_resource type="Resource" uid="uid://df1bdm18b3k5a" path="res://combo fighter/Scripts/Inventory Folder/Skills/Thrust/Straight Thrust.tres" id="9_84f20"]
+[ext_resource type="Resource" uid="uid://gppfdfapfuf3" path="res://combo fighter/Scripts/Inventory Folder/Skills/Parry/Improved Parry.tres" id="10_pd2hx"]
+[ext_resource type="Resource" uid="uid://d0g5rhkqknw5p" path="res://combo fighter/Scripts/Inventory Folder/Skills/Finisher/Sonic Boom.tres" id="11_84f20"]
+[ext_resource type="Resource" uid="uid://mpq3rafhkrm5" path="res://combo fighter/Scripts/Inventory Folder/Skills/Parry/High Speed Guard.tres" id="11_wa5ws"]
+[ext_resource type="Resource" uid="uid://dq7j6fc4nrqy1" path="res://combo fighter/Scripts/Inventory Folder/Skills/Swipe/Tricky Swipe.tres" id="13_gkn1b"]
+[ext_resource type="Resource" uid="uid://bj5lyi03553d8" path="res://combo fighter/Scripts/Inventory Folder/Skills/Hook/Slow Strike.tres" id="14_sejgh"]
+
+[sub_resource type="Resource" id="Resource_lqj0h"]
+script = ExtResource("1_wh3q6")
+metadata/_custom_type_script = "uid://c7uytroo4s2fx"
+
+[sub_resource type="Resource" id="Resource_uuldo"]
+script = ExtResource("1_wh3q6")
+metadata/_custom_type_script = "uid://c7uytroo4s2fx"
+
+[sub_resource type="Resource" id="Resource_wuv6k"]
+script = ExtResource("3_cdx8v")
+metadata/_custom_type_script = "uid://cph4ssk6cqlae"
+
+[sub_resource type="Resource" id="Resource_3e3bu"]
+script = ExtResource("3_cdx8v")
+InvItems = Array[ExtResource("1_wh3q6")]([ExtResource("5_84f20"), ExtResource("6_x145e"), ExtResource("7_3umr0"), ExtResource("8_gkn1b"), ExtResource("9_84f20"), ExtResource("10_pd2hx"), ExtResource("11_wa5ws"), ExtResource("11_84f20"), ExtResource("13_gkn1b"), ExtResource("14_sejgh")])
+metadata/_custom_type_script = "uid://cph4ssk6cqlae"
+
+[resource]
+script = ExtResource("4_lixhk")
+item_inventory = SubResource("Resource_wuv6k")
+skill_inventory = SubResource("Resource_3e3bu")
+hand_one = ExtResource("2_weytf")
+hand_two = SubResource("Resource_uuldo")
+armor = SubResource("Resource_lqj0h")
+name = "The White Flash"
+description = "A class focused on momentum"
+max_health = 100
+metadata/_custom_type_script = "uid://dxs6cud8preyl"

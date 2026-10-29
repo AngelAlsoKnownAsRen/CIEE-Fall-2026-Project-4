@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="attack" format=3 uid="uid://bevfds6u3casw"]
+
+[ext_resource type="Script" uid="uid://7jlpidj76vwl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/attack.gd" id="1_dlrns"]
+
+[resource]
+script = ExtResource("1_dlrns")
+name = "Defenses Up"
+def = 50
+metadata/_custom_type_script = "uid://7jlpidj76vwl"

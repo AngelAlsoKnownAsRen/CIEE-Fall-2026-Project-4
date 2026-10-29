@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="weapon" format=3 uid="uid://cohkcxt3jquy8"]
+
+[ext_resource type="Resource" uid="uid://dnkl8ujo5v1gh" path="res://combo fighter/Scripts/Inventory Folder/Skills/Basic/Basic Slash.tres" id="1_tdti8"]
+[ext_resource type="Resource" uid="uid://befvpw7kwfd7w" path="res://combo fighter/Scripts/Inventory Folder/Skills/Basic/Basic Guard.tres" id="2_iijhn"]
+[ext_resource type="Script" uid="uid://boydvvioa7g37" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/weapon_InvItem.gd" id="3_mwab1"]
+
+[resource]
+script = ExtResource("3_mwab1")
+basic_skill = ExtResource("1_tdti8")
+guard_skill = ExtResource("2_iijhn")
+name = "Basic Broadsword"
+metadata/_custom_type_script = "uid://boydvvioa7g37"
