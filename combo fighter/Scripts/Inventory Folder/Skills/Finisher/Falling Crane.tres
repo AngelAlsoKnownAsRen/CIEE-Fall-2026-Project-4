@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://714fxhfljjf8"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_1q6fm"]
+
+[resource]
+script = ExtResource("1_1q6fm")
+type = 6
+base_damage = 35
+def_effect_percent = 1.5
+momentum_min = 50
+momentum_max = 70
+name = "Falling Crane"
+description = "An attack descends like a falling crane!"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

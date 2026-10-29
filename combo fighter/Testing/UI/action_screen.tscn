@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://ykvhod1cmduv"]
+
+[ext_resource type="Script" uid="uid://da4fejwdiwue8" path="res://combo fighter/Testing/UI/action_screen.gd" id="1_ssp41"]
+[ext_resource type="PackedScene" uid="uid://d0j8xh3expfcq" path="res://combo fighter/Testing/UI/inventory_screen.tscn" id="2_frx7x"]
+
+[node name="Action Screen" type="Control" unique_id=408393293]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ssp41")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1345040051]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 464.0
+offset_right = 1145.0
+offset_bottom = 642.0
+color = Color(0, 0, 0, 1)
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=432444051]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 474.0
+offset_right = 1137.0
+offset_bottom = 639.0
+columns = 2
+
+[node name="Attack" type="Button" parent="GridContainer" unique_id=417475345]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "Attack"
+
+[node name="Guard" type="Button" parent="GridContainer" unique_id=425296776]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "Guard"
+
+[node name="Skills" type="Button" parent="GridContainer" unique_id=1124661710]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "Skills"
+
+[node name="Items" type="Button" parent="GridContainer" unique_id=1975178961]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "Items"
+
+[node name="Skill Menu" parent="." unique_id=1962074532 instance=ExtResource("2_frx7x")]
+layout_mode = 1
+
+[connection signal="button_down" from="GridContainer/Attack" to="." method="_on_attack_button_down"]
+[connection signal="button_down" from="GridContainer/Guard" to="." method="_on_guard_button_down"]
+[connection signal="button_down" from="GridContainer/Skills" to="." method="_on_skills_button_down"]

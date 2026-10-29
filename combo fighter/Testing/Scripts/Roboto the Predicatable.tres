@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="loop_enemy_character" format=3 uid="uid://b76x2tkhrfmbh"]
+
+[ext_resource type="Script" uid="uid://7jlpidj76vwl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/attack.gd" id="1_lbyff"]
+[ext_resource type="Resource" uid="uid://bp8vgf47uk456" path="res://Scripts/Inventory Folder/Enemy Attacks/Normal Attack.tres" id="2_3o57n"]
+[ext_resource type="Resource" uid="uid://p4ql7kj7432p" path="res://Scripts/Inventory Folder/Enemy Attacks/Strong Attack.tres" id="3_nl6sb"]
+[ext_resource type="Resource" uid="uid://cwxljtthfoqe4" path="res://Scripts/Inventory Folder/Enemy Attacks/Defensive Attack.tres" id="4_nso5t"]
+[ext_resource type="Resource" uid="uid://buodi30e4pkrs" path="res://Scripts/Inventory Folder/Enemy Attacks/Brutal Attack.tres" id="5_hoekq"]
+[ext_resource type="Script" uid="uid://17ytthp2mw42" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/loop_enemy_character.gd" id="6_xaox0"]
+
+[resource]
+script = ExtResource("6_xaox0")
+AttackList = Array[ExtResource("1_lbyff")]([ExtResource("2_3o57n"), ExtResource("3_nl6sb"), ExtResource("4_nso5t"), ExtResource("5_hoekq")])
+name = "Roboto the Predicatable"
+description = "He attacks in a loop!"
+max_health = 75
+metadata/_custom_type_script = "uid://17ytthp2mw42"

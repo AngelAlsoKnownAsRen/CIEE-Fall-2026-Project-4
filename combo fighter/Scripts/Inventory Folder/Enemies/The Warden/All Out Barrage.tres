@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="attack" format=3 uid="uid://bdi8yfv03rg1t"]
+
+[ext_resource type="Script" uid="uid://7jlpidj76vwl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/attack.gd" id="1_heyky"]
+
+[resource]
+script = ExtResource("1_heyky")
+name = "All Out Barrage"
+str = 30
+def_effect_percent = 2
+metadata/_custom_type_script = "uid://7jlpidj76vwl"
