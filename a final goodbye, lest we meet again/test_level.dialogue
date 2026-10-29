@@ -4,7 +4,8 @@ if State.bongsaultdead == "dead"
 else:
 	bongshu: You, I need mcdonalds for my daughter.
 	bongshu: Unfortunately the way to the B.D (Burger Dealer) is past this fake building created by a silent rascal. Go teach him a lesson. Understood?
-	- Ok! => END
+	- Ok!
+		You: Sure! [#mood = smile] => END
 	- Say that again... => bongshu
 
 ~ bongsault

@@ -123,12 +123,11 @@ func start(with_dialogue_resource: DialogueResource = null, cue: String = "", ex
 		start_from_cue = cue
 	dialogue_line = await dialogue_resource.get_next_dialogue_line(start_from_cue, temporary_game_states)
 	show()
-
-
 ## Apply any changes to the balloon given a new [DialogueLine].
 func apply_dialogue_line() -> void:
 	mutation_cooldown.stop()
-
+	var has_character: bool = dialogue_line.character != ""
+	
 	progress.hide()
 	is_waiting_for_input = false
 	balloon.focus_mode = Control.FOCUS_ALL
@@ -138,6 +137,14 @@ func apply_dialogue_line() -> void:
 	character_label.text = tr(dialogue_line.character, "dialogue")
 	var portrait_path: String = "res://assets/temporary/dialogue icons/" + dialogue_line.character.to_lower() + ".png"
 	
+	if has_character:
+			portrait.emote(dialogue_line.tags)
+			will_hide_balloon = false
+			dialogue_label.show()
+			if not dialogue_line.text.is_empty():
+				dialogue_label.type_out()
+				await dialogue_label.finished_typing
+
 	if FileAccess.file_exists(portrait_path):
 		portrait.texture = load(portrait_path)
 	else:
