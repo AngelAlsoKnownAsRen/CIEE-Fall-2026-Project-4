@@ -22,8 +22,8 @@ func set_target(enemy: character):
 
 func initialize():
 	cur_health = max_health
-	if (100 - hand_one.max_momentum_cost - hand_two.max_momentum_cost - armor.max_momentum_cost) > 0:
-		max_momentum = 100 - hand_one.max_momentum_cost - hand_two.max_momentum_cost - armor.max_momentum_cost
+	if (100 - hand_one.max_momentum_cost) > 0:
+		max_momentum = 100 - hand_one.max_momentum_cost
 	else:
 		max_momentum = 0
 

@@ -55,7 +55,7 @@ func update_grid():
 		button.tooltip_text = "Type: " + skill_type.Type.keys()[item.type] + "\n" + "Combos into: "
 		for combo_type in item.combo_types:
 			button.tooltip_text = button.tooltip_text + skill_type.Type.find_key(combo_type) + " "
-		button.tooltip_text = button.tooltip_text + "\n" + "Momentum Range :" + str(item.momentum_min) + "-" + str(item.momentum_max) + "\n" + " Damage: " + str(item.base_damage) + "Defense: " + str(item.base_defense) + "\n"+ item.description
+		button.tooltip_text = button.tooltip_text + "\n" + "Momentum Range :" + str(item.momentum_min) + "-" + str(item.momentum_max) + "\n" + "Momentum Gain: " + str(item.momentum_gain) +"\n" +"Damage: " + str(item.base_damage) + " Defense: " + str(item.base_defense) + "\n"+ item.description
 		
 		button.pressed.connect(_on_button_pressed.bind(item))
 		gridContainer.add_child(button)

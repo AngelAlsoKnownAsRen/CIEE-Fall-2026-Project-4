@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bf1r5853to1qf"]
 
 [ext_resource type="Script" uid="uid://le7engkirqgn" path="res://combo fighter/Testing/UI/battle_screen.gd" id="1_p3vqo"]
-[ext_resource type="Resource" uid="uid://d21mojyca2pkd" path="res://combo fighter/Testing/Scripts/Testicus the Tester.tres" id="2_e0r46"]
-[ext_resource type="Resource" uid="uid://b76x2tkhrfmbh" path="res://combo fighter/Testing/Scripts/Roboto the Predicatable.tres" id="3_e0r46"]
+[ext_resource type="Resource" uid="uid://daw8oghjbgu2w" path="res://combo fighter/Scripts/Classes/The White Flash.tres" id="2_px2x8"]
+[ext_resource type="Resource" uid="uid://dv6o6pa2rsqff" path="res://combo fighter/Scripts/Inventory Folder/Enemies/The Armorer/Karina the Armorer.tres" id="3_8qfn2"]
 [ext_resource type="PackedScene" uid="uid://ykvhod1cmduv" path="res://combo fighter/Testing/UI/action_screen.tscn" id="4_e0r46"]
 [ext_resource type="Texture2D" uid="uid://s2n3pye51bsm" path="res://combo fighter/Testing/Assets/Slash.png" id="5_tky0i"]
 [ext_resource type="Texture2D" uid="uid://bwi12mqkc7gfb" path="res://combo fighter/Testing/Assets/Thrust Symbol.png" id="6_bbech"]
@@ -17,8 +17,8 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_p3vqo")
-player = ExtResource("2_e0r46")
-enemy = ExtResource("3_e0r46")
+player = ExtResource("2_px2x8")
+enemy = ExtResource("3_8qfn2")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=20236637]
 layout_mode = 0
@@ -53,6 +53,16 @@ offset_bottom = 449.0
 theme_override_colors/font_color = Color(0.99097997, 0.82475865, 0, 1)
 theme_override_font_sizes/font_size = 35
 text = "Player Momentum: 0"
+
+[node name="Enemy Defense" type="Label" parent="." unique_id=594941795]
+layout_mode = 0
+offset_left = 555.0
+offset_top = 298.0
+offset_right = 908.0
+offset_bottom = 347.0
+theme_override_colors/font_color = Color(0.99097997, 0.82475865, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "Enemy Defense: 0"
 
 [node name="Enemy Health" type="TextEdit" parent="." unique_id=1422286775]
 layout_mode = 0

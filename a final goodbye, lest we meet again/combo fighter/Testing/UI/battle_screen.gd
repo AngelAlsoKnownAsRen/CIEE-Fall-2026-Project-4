@@ -37,6 +37,7 @@ func update_data():
 	$"Player Health".text = str(player.name) + " health: " + str(player.cur_health)
 	$"Enemy Health".text = str(enemy.name) + " health: " + str(enemy.cur_health)
 	$"Player Momentum".text = str(player.name) + " momentum: " + str(player.cur_momentum)
+	$"Enemy Defense".text = str(enemy.name) + " defense: " + str(enemy.cur_defense)
 	update_usable_skills()
 
 func update_usable_skills():

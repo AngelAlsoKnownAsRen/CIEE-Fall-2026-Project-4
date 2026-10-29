@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="player_character" format=3 uid="uid://d21mojyca2pkd"]
 
-[ext_resource type="Resource" uid="uid://cohkcxt3jquy8" path="res://combo fighter/Scripts/Inventory Folder/Weapons/Basic Broadsword.tres" id="1_iega5"]
+[ext_resource type="Resource" uid="uid://gbmkffrtv2je" path="res://combo fighter/Scripts/Inventory Folder/Weapons/Basic Greatsword.tres" id="1_iega5"]
 [ext_resource type="Script" uid="uid://dxs6cud8preyl" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/player_character.gd" id="2_lrw6b"]
 [ext_resource type="Script" uid="uid://c7uytroo4s2fx" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/InvItem.gd" id="3_577v0"]
 [ext_resource type="Script" uid="uid://cph4ssk6cqlae" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/Inventory.gd" id="6_sjnff"]
