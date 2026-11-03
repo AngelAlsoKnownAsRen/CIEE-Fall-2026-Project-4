@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://bpssr4kkek0k6"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_m1tgl"]
+
+[resource]
+script = ExtResource("1_m1tgl")
+type = 2
+combo_types = Array[int]([3, 4, 5])
+base_damage = 10
+def_effect_percent = 1.5
+momentum_max = 20
+name = "Hesitant Thrust"
+description = "A thrust that allows for defensive maneuvers"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

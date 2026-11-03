@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="weapon" format=3 uid="uid://gbmkffrtv2je"]
+
+[ext_resource type="Resource" uid="uid://cvluv76v3ndlk" path="res://Scripts/Inventory Folder/Skills/Basic/Strike (Parry).tres" id="1_kaea1"]
+[ext_resource type="Resource" uid="uid://befvpw7kwfd7w" path="res://Scripts/Inventory Folder/Skills/Basic/Basic Guard.tres" id="2_xogt6"]
+[ext_resource type="Script" uid="uid://boydvvioa7g37" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/weapon_InvItem.gd" id="3_r5ufn"]
+
+[resource]
+script = ExtResource("3_r5ufn")
+basic_skill = ExtResource("1_kaea1")
+guard_skill = ExtResource("2_xogt6")
+max_momentum_cost = 10
+name = "Basic Greatsword"
+description = "A sword that excels at guarding"
+metadata/_custom_type_script = "uid://boydvvioa7g37"

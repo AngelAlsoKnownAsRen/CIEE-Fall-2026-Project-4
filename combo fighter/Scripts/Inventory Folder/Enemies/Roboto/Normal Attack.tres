@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="attack" format=3 uid="uid://bp8vgf47uk456"]
+
+[ext_resource type="Script" uid="uid://7jlpidj76vwl" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/attack.gd" id="1_tx86g"]
+
+[resource]
+script = ExtResource("1_tx86g")
+name = "Normal Attack"
+str = 10
+metadata/_custom_type_script = "uid://7jlpidj76vwl"

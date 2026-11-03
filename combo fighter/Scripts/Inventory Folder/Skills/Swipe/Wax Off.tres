@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://dpto5bh8lgwee"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_6p4g4"]
+
+[resource]
+script = ExtResource("1_6p4g4")
+type = 5
+combo_types = Array[int]([4, 6])
+base_damage = 20
+base_defense = 5
+momentum_min = 40
+momentum_max = 60
+momentum_gain = 10
+name = "Wax Off"
+description = "A quick follow up that prepares for a great blow"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

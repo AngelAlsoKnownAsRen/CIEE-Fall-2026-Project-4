@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://cmytm1clx6bsi"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_qb311"]
+
+[resource]
+script = ExtResource("1_qb311")
+type = 4
+combo_types = Array[int]([3])
+base_damage = 10
+def_effect_percent = 0.25
+momentum_min = 15
+momentum_max = 30
+momentum_gain = 5
+name = "Prying Hook"
+description = "An attack that's excellent at getting around defenses"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

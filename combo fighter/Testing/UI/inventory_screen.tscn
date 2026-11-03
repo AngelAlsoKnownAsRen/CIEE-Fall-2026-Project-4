@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://d0j8xh3expfcq"]
+
+[ext_resource type="Script" uid="uid://dmx8meja5qept" path="res://Testing/UI/inventory_screen.gd" id="1_mey51"]
+
+[node name="Inventory Screen" type="Control" unique_id=1962074532]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mey51")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=353395753]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 464.0
+offset_right = 1145.0
+offset_bottom = 642.0
+color = Color(0, 0, 1, 1)
+
+[node name="ItemList" type="ItemList" parent="." unique_id=1526717544]
+visible = false
+layout_mode = 0
+offset_left = 1.0
+offset_top = 485.0
+offset_right = 1148.0
+offset_bottom = 649.0
+theme_override_font_sizes/font_size = 30
+select_mode = 1
+max_columns = 2
+fixed_column_width = 296
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1680149888]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 467.0
+offset_right = 1143.0
+offset_bottom = 640.0
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer" unique_id=650322381]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 3

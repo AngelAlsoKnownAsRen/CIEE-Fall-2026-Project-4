@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://bj5lyi03553d8"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_nb802"]
+
+[resource]
+script = ExtResource("1_nb802")
+type = 4
+combo_types = Array[int]([1, 3])
+base_damage = 10
+momentum_max = 15
+momentum_gain = 15
+name = "Slow Strike"
+description = "A mighty blow that uses gravity to start devastating combos"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

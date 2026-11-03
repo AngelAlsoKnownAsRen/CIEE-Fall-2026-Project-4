@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://dfs0lhay8f01f"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_vpemv"]
+
+[resource]
+script = ExtResource("1_vpemv")
+type = 2
+combo_types = Array[int]([1, 5, 4])
+base_damage = 10
+def_effect_percent = 2.0
+momentum_max = 25
+name = "Slow Thrust"
+description = "A slow slash that allows for a wider range of movement"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

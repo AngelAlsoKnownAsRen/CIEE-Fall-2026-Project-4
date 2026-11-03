@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://cvluv76v3ndlk"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_h6eql"]
+
+[resource]
+script = ExtResource("1_h6eql")
+combo_types = Array[int]([3])
+base_damage = 10
+momentum_max = 100
+momentum_gain = 10
+name = "Strike (Parry)"
+description = "An attack that goes well into defnesive maneuvers"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

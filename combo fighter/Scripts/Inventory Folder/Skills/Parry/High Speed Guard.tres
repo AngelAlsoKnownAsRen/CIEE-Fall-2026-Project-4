@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://mpq3rafhkrm5"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_v3pcd"]
+
+[resource]
+script = ExtResource("1_v3pcd")
+type = 3
+combo_types = Array[int]([1])
+base_defense = 15
+momentum_min = 40
+momentum_max = 60
+momentum_gain = 15
+name = "High Speed Guard"
+description = "A guard that moves in a blink of an eye"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

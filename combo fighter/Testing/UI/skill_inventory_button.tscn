@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c34hvaj3v5q28"]
+
+[node name="Skill Inventory Button" type="Button" unique_id=2007597822]
+custom_minimum_size = Vector2(372, 84)
+offset_left = 19.0
+offset_top = 467.0
+offset_right = 391.0
+offset_bottom = 551.0
+theme_override_font_sizes/font_size = 45
+text = "Hello"

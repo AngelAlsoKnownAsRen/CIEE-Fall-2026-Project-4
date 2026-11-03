@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://choudvhuttwg0"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_akf6c"]
+
+[resource]
+script = ExtResource("1_akf6c")
+type = 4
+base_damage = 20
+def_effect_percent = 0.5
+momentum_min = 20
+momentum_max = 40
+momentum_gain = 10
+name = "Hook Under"
+description = "A simple attack that gets around enemy defenses"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"

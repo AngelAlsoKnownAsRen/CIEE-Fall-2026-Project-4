@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="skill" format=3 uid="uid://bu2to02sx3n4p"]
+
+[ext_resource type="Script" uid="uid://bqb6qagywlaye" path="res://Scripts/Inventory Folder/Inventory Skeleton Scripts/skills_InvItem.gd" id="1_3venq"]
+
+[resource]
+script = ExtResource("1_3venq")
+type = 2
+combo_types = Array[int]([1])
+base_damage = 20
+def_effect_percent = 0.5
+momentum_min = 25
+momentum_max = 50
+momentum_gain = 10
+name = "Horn Drill"
+description = "A thrust quick enough to look like a drill"
+metadata/_custom_type_script = "uid://bqb6qagywlaye"
