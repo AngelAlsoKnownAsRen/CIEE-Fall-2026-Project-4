@@ -117,3 +117,7 @@ texture = ExtResource("9_pc1y2")
 visible = false
 layout_mode = 2
 texture = ExtResource("10_eui0g")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=686935587]
+position = Vector2(576, 320)
+zoom = Vector2(1.6, 1.6)

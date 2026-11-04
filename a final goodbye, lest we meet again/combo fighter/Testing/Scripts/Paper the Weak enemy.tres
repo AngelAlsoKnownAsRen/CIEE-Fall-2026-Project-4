@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="enemy_character" format=3 uid="uid://cdipgpfoqvdgf"]
+
+[ext_resource type="Script" uid="uid://7jlpidj76vwl" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/attack.gd" id="1_3lgv8"]
+[ext_resource type="Script" uid="uid://baixba870n0jh" path="res://combo fighter/Scripts/Inventory Folder/Inventory Skeleton Scripts/enemy_character.gd" id="2_o55pd"]
+
+[resource]
+script = ExtResource("2_o55pd")
+name = "Paper the Weak"
+max_health = 10
+metadata/_custom_type_script = "uid://baixba870n0jh"

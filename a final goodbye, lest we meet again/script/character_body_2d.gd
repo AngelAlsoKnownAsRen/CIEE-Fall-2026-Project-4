@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+
+@export var player_stats: player_character
 @onready var character_sprite = $AnimatedSprite
 @onready var actionable_presence = $Actionable_Presence/Actionable_Area
 @onready var noise_maker: AudioStreamPlayer2D = $AudioStreamPlayer2D
@@ -8,6 +10,9 @@ extends CharacterBody2D
 var input_vector = Vector2.ZERO
 var heading = Vector2.RIGHT
 var moving: bool = false
+
+func _ready() -> void:
+	BattleManager.set_player(player_stats)
 
 func _unhandled_input(_event: InputEvent) -> void:
 	if Input.is_action_just_pressed("menu_action"):

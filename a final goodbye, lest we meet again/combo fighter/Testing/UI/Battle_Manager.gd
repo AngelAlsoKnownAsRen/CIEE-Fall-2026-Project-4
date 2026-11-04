@@ -1,9 +1,12 @@
 extends Node
 
-var battle_screen
+#var battle_screen = "res://combo fighter/Testing/UI/battle_screen.tscn"
+const battle_screen_path: String = "res://combo fighter/Testing/UI/battle_screen.tscn"
+var battle_screen: Node
+
 var turn_call_id: int = 0
 @onready var player = $".".player
-@onready var enemy = $".".enemy
+@onready var enemy 
 var cur_char = enemy
 #signal player_action
 
@@ -20,8 +23,16 @@ func _process(delta: float) -> void:
 
 func start_fight(path:String):
 	var enemy_data = load(path) as enemy_character
-	get_tree().change_scene_to_file(battle_screen)
+
+	if enemy_data == null:
+		push_error("Failed to load enemy: " + path)
+		return
+
 	enemy = enemy_data
+	cur_char = enemy
+	get_tree().change_scene_to_file(battle_screen_path)
+	#await get_tree().scene_changed
+	battle_screen = get_tree().current_scene
 	player.initialize()
 	player.set_target(enemy)
 	enemy.initialize()
@@ -58,9 +69,10 @@ func next_turn():
 
 	
 	battle_screen.update_data()
-	print(str(player.name) + " health: " + str(player.cur_health))
-	print(str(enemy.name) + " health: " + str(enemy.cur_health))
-	print("-------------------------")
+	if player!= null and enemy != null:
+		print(str(player.name) + " health: " + str(player.cur_health))
+		print(str(enemy.name) + " health: " + str(enemy.cur_health))
+		print("-------------------------")
 	
 	#enemy turn
 	if cur_char == player:
@@ -85,4 +97,5 @@ func end_of_round():
 	player.reset_def()
 
 func game_over():
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://scene/test_level/test_level.tscn")
+	#get_tree().quit()

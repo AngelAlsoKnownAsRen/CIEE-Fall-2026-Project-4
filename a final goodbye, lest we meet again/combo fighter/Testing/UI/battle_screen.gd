@@ -16,17 +16,16 @@ InvItem and it's children are the items and skills a player can use
 Inventory is just an array that holds InvItems
 Attack is the attacks enemies use.
 """
-@export var player: player_character
-@export var enemy: character
+@export var player: player_character 
+@export var enemy: character = load("res://combo fighter/Testing/Scripts/Big Bertha.tres") as enemy_character
 @onready var action_screen = $"CenterContainer/Action Screen"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	player.set_target(enemy)
 	BattleManager.battle_screen = $"."
-	BattleManager.set_player(player)
-	BattleManager.set_enemy(enemy)
-	BattleManager.next_turn()
+	player = BattleManager.player
+	enemy = BattleManager.enemy
 	action_screen.set_player(player, enemy)
+	BattleManager.next_turn()
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -34,11 +33,12 @@ func _process(delta: float) -> void:
 	pass
 
 func update_data():
-	$"Player Health".text = str(player.name) + " health: " + str(player.cur_health)
-	$"Enemy Health".text = str(enemy.name) + " health: " + str(enemy.cur_health)
-	$"Player Momentum".text = str(player.name) + " momentum: " + str(player.cur_momentum)
-	$"Enemy Defense".text = str(enemy.name) + " defense: " + str(enemy.cur_defense)
-	update_usable_skills()
+	if player!= null and enemy != null:
+		$"Player Health".text = str(player.name) + " health: " + str(player.cur_health)
+		$"Enemy Health".text = str(enemy.name) + " health: " + str(enemy.cur_health)
+		$"Player Momentum".text = str(player.name) + " momentum: " + str(player.cur_momentum)
+		$"Enemy Defense".text = str(enemy.name) + " defense: " + str(enemy.cur_defense)
+		update_usable_skills()
 
 func update_usable_skills():
 	if (player.next_combo_types.has(skill_type.Type.Slash)):
