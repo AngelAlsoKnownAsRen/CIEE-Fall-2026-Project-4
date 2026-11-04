@@ -136,14 +136,6 @@ func apply_dialogue_line() -> void:
 	character_label.visible = not dialogue_line.character.is_empty()
 	character_label.text = tr(dialogue_line.character, "dialogue")
 	var portrait_path: String = "res://assets/temporary/dialogue icons/" + dialogue_line.character.to_lower() + ".png"
-	
-	if has_character:
-			portrait.emote(dialogue_line.tags)
-			will_hide_balloon = false
-			dialogue_label.show()
-			if not dialogue_line.text.is_empty():
-				dialogue_label.type_out()
-				await dialogue_label.finished_typing
 
 	if FileAccess.file_exists(portrait_path):
 		portrait.texture = load(portrait_path)

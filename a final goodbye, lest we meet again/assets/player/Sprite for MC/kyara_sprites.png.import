@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm0yem4un12my"
-path="res://.godot/imported/you_smile.png-6a3f1288a756ea30ab82fe380d837a54.ctex"
+uid="uid://cp22hyw43onnr"
+path="res://.godot/imported/kyara_sprites.png-de888ce91551cfcbf343a8e59bcbaa4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/temporary/dialogue icons/you_smile.png"
-dest_files=["res://.godot/imported/you_smile.png-6a3f1288a756ea30ab82fe380d837a54.ctex"]
+source_file="res://assets/player/Sprite for MC/kyara_sprites.png"
+dest_files=["res://.godot/imported/kyara_sprites.png-de888ce91551cfcbf343a8e59bcbaa4a.ctex"]
 
 [params]
 

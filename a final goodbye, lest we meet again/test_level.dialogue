@@ -15,6 +15,7 @@ The silence on this child is impeccable, do you wish to fight him?
 	set State.hidden = "reveal"
 	set State.bongsaultdead = "dead"
 	do Hidden_Manager.amogus()
+	do BattleManager.start_fight("res://combo fighter/Testing/Scripts/Big Bertha.tres")
 	=> END
 - Give me a moment... => END
 

@@ -17,6 +17,14 @@ func _process(delta: float) -> void:
 	#if Input.is_anything_pressed():
 		#player_action.emit()
 	pass
+
+func start_fight(path:String):
+	var enemy_data = load(path) as enemy_character
+	get_tree().change_scene_to_file(battle_screen)
+	enemy = enemy_data
+	player.initialize()
+	player.set_target(enemy)
+	enemy.initialize()
 	
 func set_player(char: character):
 	player = char
