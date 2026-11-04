@@ -6,7 +6,9 @@ var battle_screen: Node
 
 var turn_call_id: int = 0
 @onready var player = $".".player
-@onready var enemy 
+@onready var enemy
+@onready var enemy_name: String
+
 var cur_char = enemy
 #signal player_action
 
@@ -21,13 +23,14 @@ func _process(delta: float) -> void:
 		#player_action.emit()
 	pass
 
-func start_fight(path:String):
+func start_fight(path:String, key:String):
 	var enemy_data = load(path) as enemy_character
-
+	enemy_name = key
 	if enemy_data == null:
 		push_error("Failed to load enemy: " + path)
 		return
-
+	
+	enemy_name = key
 	enemy = enemy_data
 	cur_char = enemy
 	get_tree().change_scene_to_file(battle_screen_path)
@@ -36,7 +39,7 @@ func start_fight(path:String):
 	player.initialize()
 	player.set_target(enemy)
 	enemy.initialize()
-	
+		
 func set_player(char: character):
 	player = char
 	player.initialize()
@@ -97,5 +100,11 @@ func end_of_round():
 	player.reset_def()
 
 func game_over():
+	var active_enemy = battle_screen.enemy 
+	
+	if enemy_name == "Bongsault" and active_enemy.cur_health <= 0:
+		State.hidden = "reveal"
+		
 	get_tree().change_scene_to_file("res://scene/test_level/test_level.tscn")
+
 	#get_tree().quit()

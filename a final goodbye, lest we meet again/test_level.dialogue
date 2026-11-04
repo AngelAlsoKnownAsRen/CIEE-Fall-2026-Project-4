@@ -12,11 +12,10 @@ else:
 bongsault: ...
 The silence on this child is impeccable, do you wish to fight him?
 - Let's do this!
-	set State.hidden = "reveal"
 	set State.bongsaultdead = "dead"
 	do Hidden_Manager.amogus()
 	#do BattleManager.start_fight("res://combo fighter/Testing/Scripts/Paper the Weak enemy.tres")
-	do BattleManager.start_fight("res://combo fighter/Scripts/Enemies/Roboto/Roboto the Predicatable.tres")
+	do BattleManager.start_fight("res://combo fighter/Scripts/Enemies/Roboto/Roboto the Predicatable.tres", "Bongsault")
 	=> END
 - Give me a moment... => END
 
