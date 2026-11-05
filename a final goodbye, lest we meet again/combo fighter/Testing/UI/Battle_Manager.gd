@@ -23,14 +23,12 @@ func _process(delta: float) -> void:
 		#player_action.emit()
 	pass
 
-func start_fight(path:String, key:String):
+func start_fight(path:String):
 	var enemy_data = load(path) as enemy_character
-	enemy_name = key
 	if enemy_data == null:
 		push_error("Failed to load enemy: " + path)
 		return
 	
-	enemy_name = key
 	enemy = enemy_data
 	cur_char = enemy
 	get_tree().change_scene_to_file(battle_screen_path)
